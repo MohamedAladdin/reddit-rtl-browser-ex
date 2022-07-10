@@ -1,0 +1,28 @@
+{
+
+   "name": "redditRTL",
+   "description": "Extension to make ARABIC posts in REDDIT.com more easy to read and interact with, It makes the content RTL",
+   "version": "1.1",
+   "manifest_version": 2,
+
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+
+   "browser_action": {
+      "default_icon": "img/icon.png",
+      "default_title": "redditRTL"
+   },
+
+   "content_scripts": [ {
+      "js": [ "content.js" ],
+      "matches": [ "https://www.reddit.com/", "https://www.reddit.com/*" ]
+   } ],
+   
+   "icons": {
+      "128": "img/icon128.png",
+      "16": "img/icon16.png",
+      "48": "img/icon48.png"
+   }
+   
+}
